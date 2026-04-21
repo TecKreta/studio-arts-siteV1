@@ -1,109 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STUDIO ARTS｜スタジオアーツ 公式サイト</title>
+<meta name="description" content="マーダーミステリー制作チーム『STUDIO ARTS』公式サイト。役を、生きろ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Shippori+Mincho+B1:wght@700;800&family=RocknRoll+One&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<!-- NOISE OVERLAY -->
+<div class="noise"></div>
 
-SELECT THEME
-×
+<!-- THEME PANEL -->
+<div class="theme-backdrop" id="themeBackdrop"></div>
+<div class="theme-panel" id="themePanel" role="dialog" aria-label="テーマ選択">
+  <div class="theme-panel-header">
+    <h2 class="theme-panel-title">SELECT <span>THEME</span></h2>
+    <button class="theme-panel-close" id="themeClose" aria-label="閉じる">×</button>
+  </div>
+  <div class="theme-grid" id="themeGrid"></div>
+</div>
+<div class="theme-toast" id="themeToast"></div>
 
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">
+    <span class="logo-mark">S<em>/</em>A</span>
+    <span class="logo-sub">STUDIO ARTS</span>
+  </div>
+  <ul class="nav-list">
+    <li><a href="#about" data-num="01">ABOUT</a></li>
+    <li><a href="#works" data-num="02">WORKS</a></li>
+    <li><a href="#news" data-num="03">NEWS</a></li>
+    <li><a href="#contact" data-num="04">CONTACT</a></li>
+    <li><a href="#sns" data-num="05">SNS</a></li>
+  </ul>
+  <a class="nav-cta" href="https://x.com/STUDIOARTS_" target="_blank" rel="noopener">FOLLOW ▶</a>
+</nav>
 
-S/A STUDIO ARTS
-	•	ABOUT
-	•	WORKS
-	•	MEMBERS
-	•	NEWS
-	•	CONTACT
-	•	SNS
-FOLLOW ▶
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="halftone halftone-1"></div>
+    <div class="halftone halftone-2"></div>
+  </div>
 
+  <div class="hero-stripe">
+    <span>MURDER MYSTERY</span><span>★</span>
+    <span>STUDIO ARTS</span><span>★</span>
+    <span>SINCE 2024</span><span>★</span>
+    <span>MURDER MYSTERY</span><span>★</span>
+    <span>STUDIO ARTS</span><span>★</span>
+    <span>SINCE 2024</span><span>★</span>
+  </div>
 
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-no">NO.<strong>001</strong></span>
+      <span class="badge-txt">OFFICIAL SITE</span>
+    </div>
 
+    <h1 class="hero-title">
+      <span class="title-line line-1">役を、</span>
+      <span class="title-line line-2">生きろ<em>.</em></span>
+      <span class="title-en">LIVE YOUR ROLE.</span>
+    </h1>
 
+    <p class="hero-lead">
+      マーダーミステリー制作チーム<br>
+      <strong>STUDIO ARTS / スタジオアーツ</strong><br>
+      全16作品をUZUにて公開中。
+    </p>
 
-MURDER MYSTERY★ STUDIO ARTS★ SINCE 2024★ MURDER MYSTERY★ STUDIO ARTS★ SINCE 2024★
-NO.001 OFFICIAL SITE
-役を、 生きろ. LIVE YOUR ROLE.
-マーダーミステリー制作チーム STUDIO ARTS / スタジオアーツ 全16作品をUZUにて公開中。
-WORKS ▶ CONTACT ▶
-16WORKS
-2YEARS
-2.4K+FANS
-SCROLL
+    <div class="hero-cta">
+      <a href="#works" class="btn btn-primary">
+        <span>WORKS</span>
+        <span class="btn-arrow">▶</span>
+      </a>
+      <a href="#contact" class="btn btn-ghost">
+        <span>CONTACT</span>
+        <span class="btn-arrow">▶</span>
+      </a>
+    </div>
 
-/ 01
-私たちについて ABOUT US
-STUDIO ARTSは、 物語を、演じる者たちへ贈る。
-2024年、3人のクリエイターによって結成されたマーダーミステリー制作チーム。 和風、ゴシック、スチームパンク、サイバーパンク──多彩な世界観で、プレイヤーの心を盗む物語を紡ぎ続けています。
-結成から2年、UZUアプリにて15作品、UZU TOKYOにて1作品を公開。 テストプレイヤーの声を大切にし、"遊ばれて完成する" マダミスを目指しています。
-01
-物語重視
-プレイヤーが"主人公になる"物語体験を。世界観と感情の揺さぶりに徹底的にこだわります。
-02
-推理と駆け引き
-王道の論理推理から、心理戦までを緻密に設計。プレイヤー同士が交わる瞬間にドラマを。
-03
-RPの歓び
-読み合わせ・ロールプレイを楽しむための繊細なキャラクター造形。演じる悦びを届けます。
-/ 02
-作品一覧 WORKS
+    <div class="hero-meta">
+      <div class="meta-item"><span class="meta-num">16</span><span class="meta-label">WORKS</span></div>
+      <div class="meta-item"><span class="meta-num">2</span><span class="meta-label">YEARS</span></div>
+      <div class="meta-item"><span class="meta-num">2.4K+</span><span class="meta-label">FANS</span></div>
+    </div>
+  </div>
 
-#01
-黒煙街のエリー
-スチームパンク駆け引き×RP特殊RP
-煤煙けぶる機械仕掛けの街。少女が銃口で切り拓く、駆け引きの物語。
-UZU公開中
+  <div class="hero-scroll">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
 
-#02
-CRADLE MEMOIR
-ゴシック王道推理
-凶器は、呪い。 深き黒の揺籃で綴られる、哀しき回想録。
-UZU公開中
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="section-head">
+    <span class="section-no">/ 01</span>
+    <h2 class="section-title">
+      <span class="jp">私たちについて</span>
+      <span class="en">ABOUT US</span>
+    </h2>
+  </div>
 
-#03
-ペトリコールを纏って
-アンニュイエモーショナル
-雨上がりの匂いに包まれて。 アンニュイな青年が抱える、静かな真実。
-UZU公開中
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="about-lead">
+        <strong>STUDIO ARTS</strong>は、<br>
+        物語を、演じる者たちへ贈る。
+      </p>
+      <p>
+        2024年に結成されたマーダーミステリー制作チーム。<br>
+        和風、ゴシック、スチームパンク、サイバーパンク──多彩な世界観で、プレイヤーの心を盗む物語を紡ぎ続けています。
+      </p>
+      <p>
+        結成から2年、UZUアプリにて15作品、UZU TOKYOにて1作品を公開。<br>
+        テストプレイヤーの声を大切にし、"遊ばれて完成する" マダミスを目指しています。
+      </p>
+    </div>
 
-#04
-妖の國 ー百八夜と泡沫の結びー
-和風サイバーパンクRP・物語重視
-百八の夜を越え、泡沫の結びへ。 幻想の街に咲く、ネオンと桜のマダミス。
-UZU公開中／RP部門
+    <div class="about-cards">
+      <article class="pillar-card">
+        <span class="pillar-no">01</span>
+        <h3>物語重視</h3>
+        <p>プレイヤーが"主人公になる"物語体験を。世界観と感情の揺さぶりに徹底的にこだわります。</p>
+      </article>
+      <article class="pillar-card">
+        <span class="pillar-no">02</span>
+        <h3>推理と駆け引き</h3>
+        <p>王道の論理推理から、心理戦までを緻密に設計。プレイヤー同士が交わる瞬間にドラマを。</p>
+      </article>
+      <article class="pillar-card">
+        <span class="pillar-no">03</span>
+        <h3>RPの歓び</h3>
+        <p>読み合わせ・ロールプレイを楽しむための繊細なキャラクター造形。演じる悦びを届けます。</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-#05
-華唄こいこい、毒味で一杯
-ペアマダミス和風駆け引き
-花札に込めた恋と、毒の一杯。 2人で紡ぐ、艶やかな駆け引き物語。
-UZU公開中
+<!-- WORKS -->
+<section id="works" class="section works">
+  <div class="section-head">
+    <span class="section-no">/ 02</span>
+    <h2 class="section-title">
+      <span class="jp">作品一覧</span>
+      <span class="en">WORKS</span>
+    </h2>
+  </div>
 
-#06
-QUARTET ADVENTURE
-新作冒険
-四重奏が奏でる、冒険と謎の旋律。 最新作、絶賛公開中。
-UZU公開中
-─── and more... 全16作品、UZUアプリにて公開中 ───
-/ 03
-お知らせ NEWS & EVENTS
-	•	2026.04 ANNIVERSARY STUDIO ARTS 結成2周年🎉 感謝祭を開催中。リポストキャンペーン＆セール実施。
-	•	2026.04 RELEASE 新作『QUARTET ADVENTURE』UZUにて公開開始。
-	•	ONGOING RECRUIT テストプレイヤー随時募集中。ご応募はXのDMまで。
-	•	ONGOING INFO UZU TOKYOにて対面マダミス1作品を公開中。
-/ 04
-お問い合わせ CONTACT
-CONNECT WITH US.
-制作依頼、テストプレイ応募、メディア掲載、その他のお問い合わせは下記フォーム、またはXのDMにてお気軽にどうぞ。
-X (Twitter) DM ▶
-01 NAME / お名前 02 EMAIL / メール 03 SUBJECT / 件名
-          制作依頼
-          テストプレイ応募
-          メディア掲載
-          その他
-         04 MESSAGE / 内容 SEND MESSAGE ▶
+  <div class="works-grid">
 
-/ 05
-SNS・プラットフォーム FOLLOW US
-𝕏 X / Twitter @STUDIOARTS_ ▶ ◎ UZU APP 全16作品 公開中 ▶ ◈ UZU TOKYO 対面公演1作品 ▶
-LATEST POSTS
-Tweets by STUDIOARTS_
+    <article class="work-card" style="--rot:-1.2deg">
+      <div class="work-img" style="background-image:url('images/8.png')"></div>
+      <div class="work-info">
+        <span class="work-no">#01</span>
+        <h3>黒煙街のエリー</h3>
+        <p class="work-tags"><span>スチームパンク</span><span>駆け引き×RP</span><span>特殊RP</span></p>
+        <p class="work-desc">煤煙けぶる機械仕掛けの街。少女が銃口で切り拓く、駆け引きの物語。</p>
+        <p class="work-meta">UZU公開中</p>
+      </div>
+    </article>
 
-S/A STUDIO ARTS
-役を、生きろ。 — LIVE YOUR ROLE.
-© 2024-2026 STUDIO ARTS. ALL RIGHTS RESERVED.
+    <article class="work-card" style="--rot:1.5deg">
+      <div class="work-img" style="background-image:url('images/10.png')"></div>
+      <div class="work-info">
+        <span class="work-no">#02</span>
+        <h3>CRADLE MEMOIR</h3>
+        <p class="work-tags"><span>ゴシック</span><span>王道推理</span></p>
+        <p class="work-desc">凶器は、呪い。<br>深き黒の揺籃で綴られる、哀しき回想録。</p>
+        <p class="work-meta">UZU公開中</p>
+      </div>
+    </article>
+
+    <article class="work-card" style="--rot:-0.8deg">
+      <div class="work-img" style="background-image:url('images/11.png')"></div>
+      <div class="work-info">
+        <span class="work-no">#03</span>
+        <h3>ペトリコールを纏って</h3>
+        <p class="work-tags"><span>アンニュイ</span><span>エモーショナル</span></p>
+        <p class="work-desc">雨上がりの匂いに包まれて。<br>アンニュイな青年が抱える、静かな真実。</p>
+        <p class="work-meta">UZU公開中</p>
+      </div>
+    </article>
+
+    <article class="work-card" style="--rot:1.2deg">
+      <div class="work-img" style="background-image:url('images/１０８.png')"></div>
+      <div class="work-info">
+        <span class="work-no">#04</span>
+        <h3>妖の國 <span class="sub">ー百八夜と泡沫の結びー</span></h3>
+        <p class="work-tags"><span>和風</span><span>サイバーパンク</span><span>RP・物語重視</span></p>
+        <p class="work-desc">百八の夜を越え、泡沫の結びへ。<br>幻想の街に咲く、ネオンと桜のマダミス。</p>
+        <p class="work-meta">UZU公開中／RP部門</p>
+      </div>
+    </article>
+
+    <article class="work-card" style="--rot:-1deg">
+      <div class="work-img" style="background-image:url('images/華恋.png')"></div>
+      <div class="work-info">
+        <span class="work-no">#05</span>
+        <h3>華唄こいこい、毒味で一杯</h3>
+        <p class="work-tags"><span>ペアマダミス</span><span>和風</span><span>駆け引き</span></p>
+        <p class="work-desc">花札に込めた恋と、毒の一杯。<br>2人で紡ぐ、艶やかな駆け引き物語。</p>
+        <p class="work-meta">UZU公開中</p>
+      </div>
+    </article>
+
+    <article class="work-card work-card-text" style="--rot:1deg">
+      <div class="work-img work-img-placeholder">
+        <span class="placeholder-text">QUARTET<br>ADVENTURE</span>
+      </div>
+      <div class="work-info">
+        <span class="work-no">#06</span>
+        <h3>QUARTET ADVENTURE</h3>
+        <p class="work-tags"><span>新作</span><span>冒険</span></p>
+        <p class="work-desc">四重奏が奏でる、冒険と謎の旋律。<br>最新作、絶賛公開中。</p>
+        <p class="work-meta">UZU公開中</p>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="works-more">
+    ─── and more... <strong>全16作品</strong>、UZUアプリにて公開中 ───
+  </p>
+</section>
+
+<!-- NEWS -->
+<section id="news" class="section news">
+  <div class="section-head">
+    <span class="section-no">/ 03</span>
+    <h2 class="section-title">
+      <span class="jp">お知らせ</span>
+      <span class="en">NEWS &amp; EVENTS</span>
+    </h2>
+  </div>
+
+  <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">2026.04</span>
+      <span class="news-cat">ANNIVERSARY</span>
+      <span class="news-title">STUDIO ARTS 結成2周年🎉 感謝祭を開催中。リポストキャンペーン＆セール実施。</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.04</span>
+      <span class="news-cat">RELEASE</span>
+      <span class="news-title">新作『QUARTET ADVENTURE』UZUにて公開開始。</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">ONGOING</span>
+      <span class="news-cat">RECRUIT</span>
+      <span class="news-title">テストプレイヤー随時募集中。ご応募はXのDMまで。</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">ONGOING</span>
+      <span class="news-cat">INFO</span>
+      <span class="news-title">UZU TOKYOにて対面マダミス1作品を公開中。</span>
+    </li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-head">
+    <span class="section-no">/ 04</span>
+    <h2 class="section-title">
+      <span class="jp">お問い合わせ</span>
+      <span class="en">CONTACT</span>
+    </h2>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>CONNECT WITH US.</h3>
+      <p>制作依頼、テストプレイ応募、メディア掲載、その他のお問い合わせは下記フォーム、またはXのDMにてお気軽にどうぞ。</p>
+      <a class="btn btn-primary btn-large" href="https://x.com/STUDIOARTS_" target="_blank" rel="noopener">
+        <span>X (Twitter) DM</span>
+        <span class="btn-arrow">▶</span>
+      </a>
+    </div>
+
+    <form class="contact-form" onsubmit="return handleSubmit(event)">
+      <label>
+        <span class="label-num">01</span>
+        <span class="label-text">NAME / お名前</span>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        <span class="label-num">02</span>
+        <span class="label-text">EMAIL / メール</span>
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        <span class="label-num">03</span>
+        <span class="label-text">SUBJECT / 件名</span>
+        <select name="subject">
+          <option>制作依頼</option>
+          <option>テストプレイ応募</option>
+          <option>メディア掲載</option>
+          <option>その他</option>
+        </select>
+      </label>
+      <label>
+        <span class="label-num">04</span>
+        <span class="label-text">MESSAGE / 内容</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-submit">
+        <span>SEND MESSAGE</span>
+        <span class="btn-arrow">▶</span>
+      </button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<!-- SNS -->
+<section id="sns" class="section sns">
+  <div class="section-head">
+    <span class="section-no">/ 05</span>
+    <h2 class="section-title">
+      <span class="jp">SNS・プラットフォーム</span>
+      <span class="en">FOLLOW US</span>
+    </h2>
+  </div>
+
+  <div class="sns-grid">
+    <a href="https://x.com/STUDIOARTS_" target="_blank" rel="noopener" class="sns-card sns-x">
+      <span class="sns-icon">𝕏</span>
+      <span class="sns-name">X / Twitter</span>
+      <span class="sns-handle">@STUDIOARTS_</span>
+      <span class="sns-arrow">▶</span>
+    </a>
+    <a href="https://uzu.app/" target="_blank" rel="noopener" class="sns-card sns-uzu">
+      <span class="sns-icon">◎</span>
+      <span class="sns-name">UZU APP</span>
+      <span class="sns-handle">全16作品 公開中</span>
+      <span class="sns-arrow">▶</span>
+    </a>
+    <a href="https://uzu-tokyo.com/" target="_blank" rel="noopener" class="sns-card sns-uzu-tokyo">
+      <span class="sns-icon">◈</span>
+      <span class="sns-name">UZU TOKYO</span>
+      <span class="sns-handle">対面公演1作品</span>
+      <span class="sns-arrow">▶</span>
+    </a>
+  </div>
+
+  <div class="sns-timeline">
+    <h3 class="timeline-title">LATEST POSTS</h3>
+    <a class="twitter-timeline" data-theme="dark" data-chrome="noheader nofooter transparent" data-height="600"
+       href="https://twitter.com/STUDIOARTS_?ref_src=twsrc%5Etfw">Tweets by STUDIOARTS_</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-bg-shape"></div>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span class="logo-mark">S<em>/</em>A</span>
+      <span class="logo-sub">STUDIO ARTS</span>
+    </div>
+    <p class="footer-tagline">役を、生きろ。 — LIVE YOUR ROLE.</p>
+    <p class="footer-copy">© 2024-2026 STUDIO ARTS. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
